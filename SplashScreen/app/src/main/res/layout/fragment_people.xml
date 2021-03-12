@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentForMainScreen.FragmentPeople">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:textColorHint="#8a8c98"
+        android:hint="Search by name or speciality"
+        android:id="@+id/et_people_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_params_16"/>
+
+</LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_people"/>
+
+
+
+</FrameLayout>
